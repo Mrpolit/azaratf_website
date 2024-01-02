@@ -1,9 +1,65 @@
 body{
     overflow-x: hidden;
+    background-color: var(--basecolor);
+    margin: 0;
+    padding: 0;
 }
 :root{
     --basecolor:#06142E;
     --lightcolor:#1b3358;
     --textcolor:#F5D7DB;
     --buttoncolor:#F1916D;
+}
+.slider{
+    position: relative;
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    .imageGrid{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        .container{
+            background-color: var(--lightcolor);
+        }
+    }
+    .previousButton , .nextButton{
+        position: absolute;
+        transform: translate(-200%,-50%);
+        left: 100%;
+        top: 50%;
+        margin: 2rem ;
+        height: 4rem;
+        width:4rem;
+        background-color: var(--buttoncolor);
+        border-radius: 50%;
+        }
+    .nextButton{
+        transform: translate(0,-50%);
+        left: 0;
+        top: 50%;
+    }
+}
+.about{
+    position: relative;
+    height: 100svh;
+    width: 100svw;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    .topText ,.bottomText{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--lightcolor);
+    }
+    .Grid{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        .container{
+            box-shadow: 0 0 1rem var(--lightcolor);
+        }
+    }
 }
