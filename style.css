@@ -1,0 +1,169 @@
+:root{
+    --baseColor:rgb(91, 109, 146);
+    --textColor:black;
+    --baseLightColor:rgb(147, 163, 198);
+    --elementColor:white;
+}
+body{
+    color: var(--textColor);
+    font-family: 'Times New Roman', Times, serif ;
+}
+.onePage{
+    overflow: hidden;
+}
+
+.intro{
+    width: 100svw;
+    height: 100svh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    background: linear-gradient(-127deg, white, var(--baseLightColor) 50%);
+    z-index: 0;
+    animation: positionChange 3s ease-in-out forwards 7s;
+    svg{
+        position: absolute;
+        .text-logo{
+            position: relative;
+            text-transform: uppercase;
+            stroke-width: 0.1rem;
+            stroke: var(--textColor);
+            fill: transparent;
+            animation: logoFill 2s ease forwards 4s;
+            .space{
+                position: absolute;
+            }
+        } 
+    }
+}
+@keyframes moveText {
+    100% {
+        transform:translateY(200px);
+    }
+}
+@keyframes positionChange {
+    to{
+        left:100%;
+    }
+}
+@keyframes logoAnimation{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes logoFill{
+    from{
+        fill-opacity: 0;
+        fill: var(--textColor);
+        stroke-width: 0.1rem;
+    }
+    to{
+        fill-opacity: 100%;
+        fill: var(--textColor);
+        stroke-width: 0;
+  }
+}
+
+
+.main{
+    width: 100svw;
+    height: 100svh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    .navbarshadow{
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        background-color: white;
+        box-shadow: 0 0 0.5rem black;
+        transition: all 0.5s ease-in-out;
+        .navBarButton{
+            width: fit-content;
+            height: fit-content;
+            cursor: pointer;
+            .line{
+                background-color: var(--baseColor);
+                width:1rem;
+                margin: 0.5rem;
+                height:0.5rem;
+                border-radius: 1rem;
+                transition: all 0.5s ease-in-out;
+            }
+            .halfline{
+                background-color: var(--baseColor);
+                width:1rem;
+                margin: 0.5rem;
+                height:0.5rem;
+                border-radius: 1rem;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+    .navBar{
+        position: absolute;
+        width: 100%;
+        height:100%;
+        display:none;
+        justify-content: center;
+        align-items: center;
+        z-index: -2;
+        opacity: 0;
+        backdrop-filter: blur(0.2rem);
+        
+        .items{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .itemsText{
+                text-transform: uppercase;
+                letter-spacing: 1rem;
+                overflow: hidden;
+            }
+        }
+    }
+    .content{
+        position: absolute;
+        width: 100%;
+        height:100%;
+        background: linear-gradient(275deg, var(--baseLightColor), var(--baseColor));
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: -3;
+    }
+}
+@keyframes fadein {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes fadeout {
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 0%;
+    }
+}
+@keyframes rotateninty{
+    to{
+        transform: rotate(90deg);
+    }
+}
+@keyframes rotatezero {
+    from{
+        transform: rotate(90deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
