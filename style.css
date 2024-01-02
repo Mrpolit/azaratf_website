@@ -9,7 +9,7 @@ body{
     font-family: 'Times New Roman', Times, serif ;
 }
 .onePage{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .intro{
@@ -79,28 +79,48 @@ body{
         position: absolute;
         width: 100%;
         z-index: -1;
-        background-color: white;
-        box-shadow: 0 0 0.5rem black;
+        background-color: transparent;
         transition: all 0.5s ease-in-out;
+        display: grid;
+        grid-template-columns: auto 5fr 1fr 1fr 1fr 1fr ;
         .navBarButton{
             width: fit-content;
             height: fit-content;
             cursor: pointer;
             .line{
-                background-color: var(--baseColor);
+                background-color: white;
                 width:1rem;
                 margin: 0.5rem;
                 height:0.5rem;
                 border-radius: 1rem;
+                box-shadow: 0 0 0.1rem ;
                 transition: all 0.5s ease-in-out;
             }
             .halfline{
-                background-color: var(--baseColor);
+                background-color: white;
                 width:1rem;
                 margin: 0.5rem;
                 height:0.5rem;
                 border-radius: 1rem;
+                box-shadow: 0 0 0.1rem ;
                 transition: all 0.5s ease-in-out;
+            }
+        }
+        .social{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                filter: grayscale(100%);
+                transition: all 0.5s ease-in-out;
+                width: 1rem;
+                height: 1rem;
+                object-fit: cover;
+                border-radius: 0.5rem;
+                cursor: pointer;
+            }
+            img:hover{
+                filter: grayscale(0%);
             }
         }
     }
@@ -132,10 +152,29 @@ body{
         width: 100%;
         height:100%;
         background: linear-gradient(275deg, var(--baseLightColor), var(--baseColor));
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
+        display:grid;
+        grid-template-columns: 1rem 1fr;
         z-index: -3;
+        .logoHolder{
+            word-wrap: break-word;
+            margin: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            p{
+                margin-left: 1.5rem;
+                font-size: 3.5rem;
+                text-transform: uppercase;
+            }
+            img{
+                width: 5rem;
+                height: 5rem;
+                object-fit: cover;
+                border-radius: 0.5rem;
+                cursor: pointer;
+            }
+        }
     }
 }
 @keyframes fadein {
