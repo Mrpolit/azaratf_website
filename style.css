@@ -57,7 +57,7 @@ html {
     .main{
         position: absolute;
         height: 90%;
-        width: 100svw;
+        width: 100%;
         .social{
             display: flex;
             flex-direction: column;
@@ -109,7 +109,7 @@ html {
 }
 .about{
     position: relative;
-    height: 100svh;
+    height: 100dvh;
     width: 100svw;
     .Grid{
         width: 100%;
@@ -149,7 +149,7 @@ html {
 }
 .slider{
     position: relative;
-    height: 100svh;
+    height: 100dvh;
     width: 100svw;
     display: flex;
     .imageGrid{
@@ -219,7 +219,7 @@ html {
 }
 .bottom{
     position: relative;
-    height: 200svh;
+    height: 200dvh;
     width: 100svw;
     .Grid{
         position: absolute;
