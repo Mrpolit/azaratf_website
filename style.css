@@ -16,6 +16,18 @@ html {
     --lightcolor:#1b3358;
     --textcolor:#F5D7DB;
     --buttoncolor:#F1916D;
+    /* --basecolor:#26425A;
+    --lightcolor:#86A8CF;
+    --textcolor:#E1CBD7;
+    --buttoncolor:#C38EB4;
+    --basecolor:#072E33;
+    --lightcolor:#0C7D78;
+    --textcolor:#6DA5C0;
+    --buttoncolor:#294D61;
+    --basecolor:#131c2d;
+    --lightcolor:#282f47;
+    --textcolor:#FFA586;
+    --buttoncolor:#b41e2e; */
 }
 .top{
     position: relative;
