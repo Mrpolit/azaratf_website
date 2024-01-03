@@ -6,7 +6,7 @@ body{
     color: var(--textcolor);
 }
 html {
-    font-family: sans-serif;
+    font-family: 'Fira Mono' , Monospace;
     -ms-scroll-snap-type: y proximity;
     scroll-snap-type: y proximity;
     scroll-behavior: smooth;
@@ -74,6 +74,7 @@ html {
             }
             div{
                 display: flex;
+                align-self: center;
                 h1{
                     margin-left: 0.5rem;
                     text-transform: uppercase;
@@ -82,6 +83,7 @@ html {
             .text{
                 height: 100%;
                 display: flex;
+                padding-left: 0.5rem;
                 flex-direction: column;
                 justify-content: center;
             }
