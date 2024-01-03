@@ -105,12 +105,14 @@ html {
         display: grid;
         grid-template-columns: repeat(5,1fr);
         .container{
-            white-space: break-spaces;
             box-shadow: 0 0 0.1rem var(--lightcolor) ;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-evenly;
             padding: 1rem 0 1rem 0;
+            h4,h5{
+                margin-left: 1rem;
+            }
             .logo{
                 margin: auto;
                 width: 100%;
@@ -127,7 +129,6 @@ html {
             .text{
                 height: 100%;
                 display: flex;
-                padding-left: 0.5rem;
                 flex-direction: column;
                 justify-content: center;
             }
@@ -227,4 +228,9 @@ html {
 }
 .textcolor{
     color: var(--buttoncolor);
+}
+lord-icon{
+    background-color: var(--textcolor);
+    border-radius:50% ;
+    margin-left: 1rem;
 }
