@@ -9,6 +9,7 @@ html {
     font-family: sans-serif;
     -ms-scroll-snap-type: y proximity;
     scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
   }
 
 :root{
