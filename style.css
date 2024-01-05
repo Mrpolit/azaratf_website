@@ -5,12 +5,12 @@ body{
     padding: 0;
     color: var(--textcolor);
     perspective: 100rem;
+    scroll-behavior: smooth;
 }
 html {
     font-family: 'Fira Mono' , Monospace;
     -ms-scroll-snap-type: y proximity;
     scroll-snap-type: y proximity;
-    scroll-behavior: smooth;
 }
 :root{
     --basecolor:#06142E;
@@ -30,6 +30,7 @@ html {
     --textcolor:#FFA586;
     --buttoncolor:#b41e2e; */
 }
+/* navigation bar properties*/
 .navbar{
     position: sticky;
     width: 100%;
@@ -48,6 +49,7 @@ html {
         color: var(--textcolor);
     }
 }
+/* top image and logo and social media images */
 .top{
     position: relative;
     transform: translateY(-8.5svh);
@@ -92,6 +94,7 @@ html {
 
         }
     }
+    /* next and previous button for image change  */
     .previousButton , .nextButton{
         position: absolute;
         height: 4rem;
@@ -115,6 +118,7 @@ html {
         top: 40%;
     }
 }
+/* imtroduction menu with image and text  */
 .introduction{
     position: relative;
     height: 120dvh;
@@ -130,7 +134,6 @@ html {
         justify-content: space-around;
         align-items: end;
         img{
-            box-shadow: 0 0 0.5rem var(--textcolor) ;
             height: 33%;
             width: 66%;
             object-fit: cover;
@@ -183,6 +186,7 @@ html {
         box-shadow: 0 0 0.5rem var(--textcolor) ;
     }
 }
+/* about site section  */
 .about{
     position: relative;
     height: 100dvh;
@@ -223,6 +227,7 @@ html {
         }
     }
 }
+/* image slider with previous and next button  */
 .slider{
     position: relative;
     height: 100dvh;
@@ -310,12 +315,15 @@ html {
         }
     }
 }
+/* snap view properties */
 .snapview{
     scroll-snap-align: center;
 }
+/* dark text color for html  */
 .textcolor{
     color: var(--buttoncolor);
 }
+/* lord icons properties */
 lord-icon{
     margin-left: 1rem;
 }
