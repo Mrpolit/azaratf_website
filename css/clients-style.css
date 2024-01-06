@@ -41,16 +41,48 @@ body{
             }
             .image{
                 width: 100%;
-                height: 85%;
-                transform: translateY(8.5svh) translateX(2svw);
-                background-color: var(--textcolor);
+                max-height: 60svh;
+                transform: translateY(10svh) translateX(2svw);
+                background: linear-gradient( 0deg ,var(--textcolor),var(--lightcolor));
                 box-shadow: 2rem -3rem 3rem var(--lightcolor);
                 display: flex;
                 align-items: end;
                 img{
-                    height: 125%;
+                    filter: grayscale(100%);
                     width: 100%;
                     object-fit: cover;
+                    transition: all 0.4s ease-in-out;
+                }
+                img:hover{
+                    filter: grayscale(0%);
+                }
+            }
+        }
+        .about{
+            width: auto;
+            display: grid;
+            div{
+                padding-left: 10%;
+                h3{
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
+            }
+            .socialNetwork{
+                display: flex;
+                padding: 0;
+                width: auto;
+                padding-right: 15%;
+                justify-content: right;
+                align-items:end;
+                img{
+                    filter: grayscale(40%);
+                    width: 2rem;
+                    height: 2rem;
+                    margin: 0.5rem;
+                    margin-bottom: 2rem;
+                    object-fit: cover;
+                    border-radius: 0.5rem;
                 }
             }
         }
