@@ -36,11 +36,10 @@
                 margin: 0;
             }
             img{
-                filter: grayscale(60%);
-                width: 1rem;
-                height: 1rem;
-                border-radius: 25%;
-                object-fit: cover;
+                width: 2rem;
+                height: 2rem;
+                mix-blend-mode: luminosity;
+                object-fit: contain;
                 cursor: pointer;
             }
         }
