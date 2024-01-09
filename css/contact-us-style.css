@@ -1,0 +1,28 @@
+
+.field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .idBar{
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        width: 80svw;
+        height: 80svh;
+        background-color: var(--textcolor);
+        box-shadow:0 0 3rem var(--lightcolor);
+        overflow: hidden;
+        .main{
+
+        }
+        .side{
+            background-color: var(--buttoncolor);
+        }
+    }
+    .sideBar{
+        position: absolute;
+        transform: translateX(30svw);
+        width:25svw;
+        height: 65svh;
+        background-color: var(--lightcolor);
+    }
+}
